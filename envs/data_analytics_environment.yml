@@ -1,0 +1,15 @@
+name: data_analytics_environment
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - python
+  - pip=18
+  - altair
+  - seaborn
+  - numpy
+  - scipy
+
+
+  

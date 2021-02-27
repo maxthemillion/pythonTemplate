@@ -1,0 +1,10 @@
+name: standard_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - python
+  - pip=18
+
+  
