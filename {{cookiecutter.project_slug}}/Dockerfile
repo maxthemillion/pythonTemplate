@@ -19,4 +19,4 @@ RUN R -e "IRkernel::installspec()"
 {% endif %}
 
 WORKDIR /src/notebooks
-CMD jupyter lab --ip 0.0.0.0 --port 9999 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''
+CMD jupyter lab --ip 0.0.0.0 --port {{cookiecutter.jupyter_port}} --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''

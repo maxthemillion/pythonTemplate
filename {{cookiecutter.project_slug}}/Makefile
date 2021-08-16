@@ -14,4 +14,4 @@ docker_build:
     docker build -t {{cookiecutter.project_slug}} .
 
 docker_run:
-    docker run --rm --mount type=bind,source=$(PWD),target=/src -p 9999:9999 {{cookiecutter.project_slug}}
+    docker run --rm --mount type=bind,source=$(PWD),target=/src -p {{cookiecutter.jupyter_port}}:{{cookiecutter.jupyter_port}} {{cookiecutter.project_slug}}
