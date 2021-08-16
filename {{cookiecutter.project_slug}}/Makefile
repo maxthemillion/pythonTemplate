@@ -8,6 +8,9 @@ clean:
     rm -rf __pycache__ .pytest_cache
 
 flake:
-    flake8 common.py tests.py
+    flake8 .
 
-check: flake test clean
+black: 
+    black .
+
+check: black flake

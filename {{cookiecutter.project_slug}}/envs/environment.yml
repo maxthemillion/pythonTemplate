@@ -12,7 +12,6 @@ dependencies:
   - tqdm          # progressbars
   - black         # code formatters 
   - flake8        # style checkers
-  #- scikit-learn   # machine learning stuff
 
   - pip:
     - csvs-to-sqlite  # convert csvs to sqlite on command line
