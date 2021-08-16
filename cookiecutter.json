@@ -3,5 +3,6 @@
     "author": "author",
     "project_slug": "{{cookiecutter.project.lower().replace(' ', '_')}}", 
     "conda_env_name": "{{cookiecutter.project_slug}}",
-    "use_R":["yes", "no"]
+    "use_R":["yes", "no"],
+    "jupyter_port": "9999"
 }
