@@ -1,3 +1,7 @@
+# {{cookiecutter.project}}
+
+Author: {{cookiecutter.author}}
+
 
 # Basic structure for a new Python project
 

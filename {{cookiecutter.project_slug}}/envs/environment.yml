@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab    
+  - numpy
+  - pip 
+  - requests      # api calls
+  - altair        # interactive plottings
+  - matplotlib    # plotting a lot of data
+  - plotly        # interactive plotting
+  - seaborn       # nice statistical plots
+  - tqdm          # progressbars
+  - black         # code formatters 
+  - flake8        # style checkers
+  #- scikit-learn   # machine learning stuff
+
+  - pip:
+    - csvs-to-sqlite  # convert csvs to sqlite on command line
+    - datasette       # explore sqlite in your browser
+    - datasette-vega  # add plotting to datasette
+    - chime           # audio cues for tasks with long runtimes
+    - pre-commit      # automated pre-commit hooks
+    - pytest          # unittests

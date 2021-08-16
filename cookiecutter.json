@@ -1,0 +1,8 @@
+{
+    "project": "project",
+    "author": "author",
+    "project_slug": "{{cookiecutter.project.lower().replace(' ', '_')}}", 
+    "conda_env_name": "{{cookiecutter.project_slug}}",
+    "conda_env_install": ["yes", "no"],
+    "jupyter_port":["8888", "9999"]
+}
