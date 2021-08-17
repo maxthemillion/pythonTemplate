@@ -1,3 +1,5 @@
+name:
+  - {{cookiecutter.project_slug}}
 channels:
   - conda-forge
 dependencies:
