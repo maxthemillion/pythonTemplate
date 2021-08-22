@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y git
 
 RUN mkdir /temp
 COPY environment.yml /temp
-    
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
+    -t robbyrussell    
+
 RUN conda env update --name base --file /temp/environment.yml
 
 {% if cookiecutter.use_R == 'yes' %}
