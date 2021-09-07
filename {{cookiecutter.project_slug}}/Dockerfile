@@ -12,7 +12,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 
 RUN conda env update --name base --file /temp/environment.yml
 
-{% if cookiecutter.use_R == 'yes' %}
+{% if cookiecutter.include_R_in_docker_image == 'yes' %}
 
 RUN apt install -y r-base
 RUN R -e "install.packages('IRkernel')"
