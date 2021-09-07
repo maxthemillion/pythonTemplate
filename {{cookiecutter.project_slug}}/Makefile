@@ -1,5 +1,5 @@
 install:
-    conda env create -f envs/environment.yml
+    conda env create -f environment.yml
 
 clean:
     rm -rf __pycache__ .pytest_cache
@@ -15,3 +15,6 @@ docker_build:
 
 docker_run:
     docker run --rm --mount type=bind,source=$(PWD),target=/src -p {{cookiecutter.jupyter_port}}:{{cookiecutter.jupyter_port}} {{cookiecutter.project_slug}}
+
+test:
+    pytest -q
