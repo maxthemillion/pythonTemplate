@@ -10,7 +10,7 @@ if __name__ == "__main__":
             "--name {{ cookiecutter.conda_env_name }}"
         )
 
-        os.system("conda activate {{ cookiecutter.conda_env_name }} & deon -o ETHICS.md")
+        os.system("conda run -n {{ cookiecutter.conda_env_name }} deon --output ETHICS.md")
 
     if "{{ cookiecutter.init_git_repo }}" == "yes":
         os.system("git init & git commit -a -m 'initial commit'")
