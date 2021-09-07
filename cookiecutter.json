@@ -2,6 +2,7 @@
     "project": "project",
     "author": "author",
     "project_slug": "{{cookiecutter.project.lower().replace(' ', '_')}}", 
+    "module_slug": "{{cookiecutter.project_slug}}", 
     "conda_env_name": "{{cookiecutter.project_slug}}",
     "use_R":["yes", "no"],
     "jupyter_port": "9999"
