@@ -14,5 +14,6 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.init_git_repo }}" == "yes":
         os.system("git init")
+        os.system("git add .")
         os.system("git commit -a -m 'initial commit'")
         os.system("git checkout -b dev")
