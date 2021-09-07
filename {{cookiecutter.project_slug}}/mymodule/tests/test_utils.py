@@ -6,6 +6,7 @@ from ..utils.utils import MyClass
 def instance():
     return MyClass()
 
+
 class TestMyClass:
     def setUp(self):
         pass
