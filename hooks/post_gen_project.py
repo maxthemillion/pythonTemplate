@@ -8,6 +8,7 @@ if __name__ == "__main__":
             "conda env create "
             "--file environment.yml "
             "--name {{ cookiecutter.conda_env_name }}"
+            "--prefix ./.env"
         )
 
         os.system("conda run -n {{ cookiecutter.conda_env_name }} deon --output ETHICS.md")
