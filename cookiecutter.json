@@ -6,7 +6,7 @@
     "module_slug": "{{cookiecutter.project_slug}}", 
     "conda_env_name": "{{cookiecutter.project_slug}}",
     "jupyter_port": "9999",
-    "create_conda_env": ["no", "yes"],
+    "create_conda_env": ["yes", "no"],
     "init_git_repo": ["yes", "no"],
     "include_R_in_docker_image": ["no", "yes"]
 }

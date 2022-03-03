@@ -10,8 +10,7 @@ if __name__ == "__main__":
             "--name {{ cookiecutter.conda_env_name }}"
             "--prefix ./.env"
         )
-
-        os.system("conda run -n {{ cookiecutter.conda_env_name }} deon --output ETHICS.md")
+        os.system("conda run -n {{ cookiecutter.conda_env_name }} pre-commit install ")
 
     if "{{ cookiecutter.init_git_repo }}" == "yes":
         os.system("git init")

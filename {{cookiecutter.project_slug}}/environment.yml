@@ -16,8 +16,8 @@ dependencies:
   - nb_conda_kernels # use any conda env from within jupyter (also R kernels)
   - pytest        # unittests
   - cookiecutter  # project templates
-  - deon          # ethics checklists
   - rich          # rich terminal outputs
+  - conda-develop
   - pip:
     - csvs-to-sqlite  # convert csvs to sqlite on command line
     - datasette       # explore sqlite in your browser
