@@ -13,7 +13,7 @@ if not re.match(MODULE_REGEX, module_name):
 
 EDITOR = os.environ.get('EDITOR','vim') #that easy!
 
-with open("./environment.yml", 'rb') as f:
+with open("./{{cookiecutter.project_slug}}/environment.yml", 'rb') as f:
     env_file = f.read()
 
 
