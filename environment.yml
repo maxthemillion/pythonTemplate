@@ -1,0 +1,8 @@
+name: pytemlate
+channels:
+  - conda-forge
+dependencies:
+  - cookiecutter  # project templates
+  - pytest
+  - pip:
+    - pytest-cookies

@@ -1,11 +1,12 @@
 {
     "project": "project",
     "author": "author",
+    "email":"email",
     "project_slug": "{{cookiecutter.project.lower().replace(' ', '_')}}", 
     "module_slug": "{{cookiecutter.project_slug}}", 
     "conda_env_name": "{{cookiecutter.project_slug}}",
     "jupyter_port": "9999",
-    "create_conda_env": ["yes", "no"],
+    "create_conda_env": ["no", "yes"],
     "init_git_repo": ["yes", "no"],
     "include_R_in_docker_image": ["no", "yes"]
 }

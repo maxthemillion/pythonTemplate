@@ -1,5 +1,5 @@
 import pytest
-from ..utils import MyClass
+from utils import MyClass
 
 
 @pytest.fixture

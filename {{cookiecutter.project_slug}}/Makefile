@@ -2,6 +2,7 @@
 
 help:
 	@echo "install		installs conda environment as specified in environment.yml"
+	@echo "install_dev	installs the module {{cookiecutter.module_slug}} into the current environment"
 	@echo "clean		removes python artifacts such as __pycache__ files"
 	@echo "flake		runs flake8 on the working directory to check for code style violations"
 	@echo "black		runs code formatter black on the working directory"
@@ -12,6 +13,9 @@ help:
 
 install:
 	conda env create -f environment.yml
+
+dev_install:
+	conda develop .
 
 clean:
 	rm -rf __pycache__ .pytest_cache
