@@ -13,7 +13,11 @@ if not re.match(MODULE_REGEX, module_name):
 
 EDITOR = os.environ.get('EDITOR','vim') #that easy!
 
-initial_message = b"edit" # if you want to set up the file somehow
+with open("./environment.yml", 'rb') as f:
+    env_file = f.read()
+
+
+initial_message = b"#edit\n" + env_file# if you want to set up the file somehow
 
 with tempfile.NamedTemporaryFile(suffix=".tmp") as tf:
   tf.write(initial_message)
