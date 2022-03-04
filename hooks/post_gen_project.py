@@ -7,7 +7,7 @@ if __name__ == "__main__":
     if "{{ cookiecutter.create_conda_env }}" == "yes":
         EDITOR = os.environ.get('EDITOR','vim')
 
-        with open("./{{cookiecutter.project_slug}}/environment.yml", 'rb') as f: 
+        with open("./environment.yml", 'rb') as f: 
             initial_message = f.read()
 
         with tempfile.NamedTemporaryFile(suffix=".tmp") as tf:
