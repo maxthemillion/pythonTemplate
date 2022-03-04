@@ -14,11 +14,11 @@ if __name__ == "__main__":
             tf.write(initial_message)
             tf.flush()
             call([EDITOR, tf.name])
-
-            # do the parsing with `tf` using regular File operations.
-            # for instance:
             tf.seek(0)
             edited_message = tf.read()
+
+        with open("./environment.yml", "wb") as f:
+            f.write(edited_message)
 
         os.system(
             "conda env create "
