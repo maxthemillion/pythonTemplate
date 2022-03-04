@@ -1,3 +1,6 @@
+# To unselect select packages from installation, remove the respective lines or comment them out.
+# Add further packages if required.
+
 name: {{cookiecutter.project_slug}}
 channels:
   - conda-forge
@@ -17,7 +20,7 @@ dependencies:
   - pytest        # unittests
   - cookiecutter  # project templates
   - rich          # rich terminal outputs
-  - conda-develop
+  - conda-build
   - pip:
     - csvs-to-sqlite  # convert csvs to sqlite on command line
     - datasette       # explore sqlite in your browser
